@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "g++ build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "src\\**.cpp",
+                "-o",
+                "bin\\${fileBasenameNoExtension}.exe"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "execute",
+            "type": "shell",
+            "group": "test",
+            "command": "start",
+            "args": [
+                "powershell.exe",
+                "'-ExecutionPolicy ByPass -NoExit -command \"bin\\${fileBasenameNoExtension}.exe;echo `0;pause;exit\"'"
+            ]
+        }
+    ]
+}
