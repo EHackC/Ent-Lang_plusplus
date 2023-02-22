@@ -31,4 +31,4 @@ SOFTWARE.
 
 
 ## 이거랑 상관 없는데
-asdfEntry만들기 귀찮습니다.
+asdfEntry만들기 귀찮습니다
