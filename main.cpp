@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 #include <cstring>
-#include <windows.h>
+//#include <windows.h>
 
 using namespace std;
 
@@ -335,7 +335,7 @@ int getFile(char* path){
 }
 
 int main(int argc,char* argv[]){
-    SetConsoleOutputCP(65001);
+    //SetConsoleOutputCP(65001);
 
     char path[1024];
     if(argc==2){
